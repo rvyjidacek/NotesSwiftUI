@@ -57,8 +57,8 @@ struct NotesListView: View {
     
     private var notesList: some View {
         List(state.notes) { note in
-            NoteListCell(title: note.title,
-                         content: note.content)
+            NoteListRow(title: note.title,
+                        content: note.content)
         }
         .listStyle(.insetGrouped)
         
